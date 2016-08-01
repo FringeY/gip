@@ -1,6 +1,5 @@
 const config = {
-  apikey: '',
-  url: 'http://apis.baidu.com/apistore/iplookupservice/iplookup',
+  url: 'http://ip.cn',
   port: 5555,
 };
 

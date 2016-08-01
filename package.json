@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cheerio": "^0.20.0",
     "koa": "^1.2.1",
     "request": "^2.73.0"
   }
