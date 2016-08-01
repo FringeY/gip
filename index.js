@@ -8,7 +8,7 @@ app.use(function* (next){
   try {
     const data = yield new Promise((resolve) => {
       request({
-        url: config.url,
+        url: `${config.url}${this.request.ip}`,
         headers: {
           'User-Agent': 'request'
         }
