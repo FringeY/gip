@@ -8,7 +8,7 @@ app.use(function* (next){
   try {
     const data = yield new Promise((resolve) => {
       request({
-        url: `${config.url}${this.request.ip}`,
+        url: `${config.url}${this.request.ip.slice(7)}`,
         headers: {
           'User-Agent': 'request'
         }
@@ -25,7 +25,7 @@ app.use(function* (next){
         })
       });
     });
-    this.body = data;
+    this.body = JSON.stringify(data);
   } catch(e) {
     this.body = {
       code: e.status,

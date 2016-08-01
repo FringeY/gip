@@ -23,8 +23,8 @@ pm2 start index.js --name='gip' -i max  -e err.log -o out.log
 ```JSON
 // response
 {
-  ip: "",
-  city: "",
-  geoIP: ""
+  "ip": "",
+  "city": "",
+  "geoIP": ""
 }
 ```
